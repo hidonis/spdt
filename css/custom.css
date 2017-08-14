@@ -1,0 +1,187 @@
+.nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:hover,
+    .nav-tabs > li.active > a:focus{
+    color: #b2b7c1;
+    background-color: #fff; 
+    border-top-right-radius:2em;
+} 
+ .nav-tabs > li > a,
+    .nav-tabs > li > a:hover,
+    .nav-tabs > li > a:focus{
+    color: #fff;
+    background-color: #2F4F4F;
+    border-top-right-radius:2em;  
+}
+.main-header .logo {
+text-decoration:none;
+}
+.skin-black .sidebar-menu > li > .treeview-menu {
+	background-color:#fff;
+}
+.skin-black .treeview-menu > li > a:hover{
+	color:#000;
+}
+.skin-black .treeview-menu > li  {
+	background-color:#fff;
+}
+.skin-black .treeview-menu > li > a {
+	color:#999ea8;
+}
+.page-wrapper{
+	background-color:#98bcf2;
+	
+}
+.skin-black .sidebar a{
+	color:#000;
+	font-family:'Poppins', sans-serif;
+}
+.skin-black .sidebar-menu > li:hover > a, .skin-black .sidebar-menu > li.active > a{
+	color:#000;
+}
+.skin-black .sidebar-menu > li:hover > a{
+	background-color:#b7b9bc;
+}
+.skin-black .sidebar-menu > li.active > a{
+	background-color:#062a63;
+	color:#fff;
+	
+}
+.skin-black .treeview-menu > li.active > a, .skin-black .treeview-menu > li > a:hover {
+	text-decoration:none;
+}
+.skin-black .main-header > .logo{
+	background-color:#fff;
+}
+
+.skin-black .main-header .navbar{
+	background-color: #fff;
+	
+}
+.skin-black .user-panel > .info, .skin-black .user-panel > .info > a{
+	color:#000;
+}
+.skin-black .treeview-menu > li.active > a, .skin-black .treeview-menu > li > a:hover{
+	color:#000;
+}
+.navbar-text {
+    position: absolute;
+    width: 100%;
+    left: 50px;
+    margin: auto;
+    padding-top: 12px;
+    font-size: 18px;
+    text-align: center;  
+	font-family:'Poppins', sans-serif;
+}
+.navbar-text-alt{
+	position: absolute;
+    width: 100%;
+    
+    margin: auto;
+    padding-top: 12px;
+    font-size: 18px;
+    text-align: center;  
+	font-family:'Poppins', sans-serif;
+}
+.skin-black .wrapper, .skin-black .main-sidebar, .skin-black .left-side {
+	background-color:#fff;
+}
+
+.content{
+	border: solid 1px #ccc;
+	
+}
+.progress{
+    background-color: #2F4F4F;
+}
+th{
+    color: #fff;
+    text-align: center;
+    background-color: #2F4F4F;
+} 
+td{
+    color: black;
+    background-color: lightgrey;
+}
+.kanan{
+    text-align: right;
+}
+.pie-legend ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.persen{
+    color: #fff;
+}
+
+    .pie-legend span {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border-radius: 100%;
+        margin-right: 16px;
+        margin-bottom: -2px;
+    }
+
+    .pie-legend li {
+        margin-bottom: 10px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+.cell {
+    display: table-cell;
+    vertical-align: middle;
+} 
+body.login-page {
+    background: url("../img/back.gif")  no-repeat center center fixed;
+    background-size:contain;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    color: #666;
+}
+.top {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+.login-box {
+    background-color: white;
+    max-width: 340px;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 50px rgba(0,0,0,0.4);
+    text-align: center;
+    margin-top: 200px;
+}
+
+.login-box .box-header {
+    background-color:#FC0;
+    margin-top: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.namaprop {
+    white-space: nowrap;
+}
+
+.autoResizeImage {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    
+}
+
+#map{
+	width:100%;
+	height:450px;
+}
