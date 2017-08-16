@@ -5,6 +5,13 @@
     background-color: #fff; 
     border-top-right-radius:2em;
 } 
+.main-header {
+	box-shadow: 1px 0px 0px #000;
+}
+.main-header .sidebar-toggle{
+	padding: 15px 15px;
+}
+
  .nav-tabs > li > a,
     .nav-tabs > li > a:hover,
     .nav-tabs > li > a:focus{
@@ -52,6 +59,9 @@ text-decoration:none;
 .skin-black .main-header > .logo{
 	background-color:#fff;
 }
+.brand-text{
+	text-shadow: 1px 1px 0px #ccc;
+}
 
 .skin-black .main-header .navbar{
 	background-color: #fff;
@@ -66,7 +76,7 @@ text-decoration:none;
 .navbar-text {
     position: absolute;
     width: 100%;
-  
+	text-shadow: 1px 1px 1px #ccc;
     margin: auto;
     padding-top: 12px;
     font-size: 18px;
@@ -88,8 +98,8 @@ text-decoration:none;
 }
 
 .content{
-	border: solid 1px #ccc;
-	
+	 /* border: solid 1px #e3e5e8; */
+	background-color: #F0F4F5;
 }
 .progress{
     background-color: #2F4F4F;
@@ -180,8 +190,60 @@ body.login-page {
     width: 100%;
     
 }
-
+/* Untuk Map */
 #map{
 	width:100%;
 	height:450px;
+}
+
+
+/*untuk h1 */
+.content-header > h1 {
+font-size: 18px;
+margin-bottom: 5px;
+text-shadow: 1px 1px 1px #fff;
+}
+
+h4, .h4 {
+	font-size: 16px;
+	text-shadow:1px 1px 1px #fff;
+	text-transform:capitalize;
+	
+}
+h3 {
+	font-size: 16px;
+	text-shadow:1px 1px 1px #fff;
+	text-transform:capitalize;
+}
+.knob-label{
+	text-shadow: 1px 1px 1px #fff;
+}
+.diagram-progres{
+	background: #fff;
+	border: 1px solid #E8E8E8;
+	padding-bottom: 5px;
+}
+.progress{
+	background-color:#03013F;
+}
+.form-group{
+	padding-bottom:5px;
+	
+}
+.box {
+	margin-bottom:10px;
+}
+
+table {
+	background-color:#fff;
+}
+th {
+	background-color:#F5F5F5;
+	color:#000;
+}
+td {
+	background-color:#fff;
+}
+.table > thead > tr > th {
+	vertical-align:middle;
 }

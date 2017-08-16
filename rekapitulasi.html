@@ -342,13 +342,12 @@ desired effect
 </aside>
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-
+  <div class="content-wrapper">
 
         <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-          Progres Harian
+        	Rekapitulasi Progres Verval &amp; Usulan Baru Nasional
         <small></small>
     </h1>
     <ol class="breadcrumb">
@@ -359,229 +358,164 @@ desired effect
         <!-- Main content -->
         <section class="content">
             <!-- Your Page Content Here -->
-                  <!-- Info boxes -->
-      <div class="row">
+            <div class="row">
+    <div class="col-md-12">
+      <div class="box box-primary">
+        <div class="box-body">
+                    <div class="table-responsive col-sm-12">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th rowspan="3" valign="middle">Propinsi</th>
+                  <th colspan="5">Target</th>
+                  <th colspan="10">Realisasi</th>
+                </tr>
+                <tr>
+                  <th rowspan="2" valign="top">Kec</th>
+                  <th rowspan="2" valign="top">Desa</th>
+                  <th rowspan="2" valign="top">Prelist</th>
+                  <th rowspan="2" valign="top">Usulan Baru</th>
+                  <th rowspan="2" valign="top">Total</th>
 
-        <div class="col-md-3 text-center">
-              <div class="diagram-progres"> <!-- ditambah kotak -->
-			  <h4>Progres Verivali<br/>Hari Ini</h4> <!-- Ganti jangan capslock mas -->
-              <input type="text" class="knob" value="563" data-skin="tron" data-max="1000000" data-thickness="0.1" data-width="100" data-height="100" data-fgColor="orange">
+                  <th colspan="2" valign="top">Kec</th>
+                  <th colspan="2" valign="top">Desa</th>
+                  <th colspan="2" valign="top">Prelist</th>
+                  <th colspan="2" valign="top">Usulan Baru</th>
+                  <th colspan="2" valign="top">Total</th>
 
-              <div class="knob-label">Rumah Tangga</div></div><br> 
-			  
-              <div class="diagram-progres"> <!-- ditambah kotak -->
-			  
-			  <h4>Progres Verivali<br/> s.d 14 August 2017</h4>
-              <input type="text" class="knob" value="5466" data-skin="tron" data-max="10000000" data-thickness="0.1" data-width="100" data-height="100" data-fgColor="#00a65a">
-              <div class="knob-label">Rumah Tangga</div>
-              <div class="knob-label">(kumulatif)</div></div><br>
-        </div>
-        <div class="col-md-7">
-      <form method="GET" action="http://spdt.kemsos.go.id/admin/harian2" accept-charset="UTF-8">
-          <!-- <div class="form-group ">
-                <label for="name">Nama</label>
-                <input class="form-control" name="name" type="text" id="name">
-                
-                </div> -->
-          <div class="form-group">
-            <div class="col-md-7">Filter By:</div><br>
-            <div class="col-sm-3">
-            <select id="propinsi_id" name="propinsi_id" class="form-control" @change="getKotas(propinsi_id)" v-model="propinsi_id" >
-                    <option v-for="prop in Provinsis" v-bind:value="prop.id" >
-                        {{prop.name}}
-                    </option>
-           </select>
-            </div>
-            <div class="col-sm-3">
-          <select id="kota_id" name="kota_id" class="form-control" @change="getKecamatans(kota_id,propinsi_id)" v-model="kota_id">
-                    <option value="-1">-</option>
-                    <option v-for="kota in Kotas" v-bind:value="kota.id">
-                        {{kota.name}}
-                    </option>
-           </select>
-            </div>
-            <div class="col-sm-3">
-            <select id="kecamatan_id" name="kecamatan_id" class="form-control" v-model="kecamatan_id">
-                  <option value="-1">-</option>
-                    <option v-for="kec in Kecamatans" v-bind:value="kec.id">
-                        {{kec.name}}
-                    </option>
-           </select>
-            </div>
-			 <div class="col-sm-3"><button type="submit" class="btn btn-primary">Cari</button></div>
-          </div>
-         
-
-        </form>
-        <br>
-        <div class="box box-info">
-            <div class="box-header with-border">
-              <h3 class="box-title">Progres Harian Kegiatan Verivali</h3>
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <div class="box-body">
-              <div class="chart">
-              <canvas id="myChart" height="100px"></canvas>
-
-              </div>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <br>
-          <!-- Item Listing -->
-          <div class="box box-info">
-          <div class="box-body">
-          <table class="table table-bordered">
-
+                </tr>
+                <tr>
+                  <th>Jml</th>
+                  <th>%</th>
+                  <th>Jml</th>
+                  <th>%</th>
+                  <th>Jml</th>
+                  <th>%</th>
+                  <th>Jml</th>
+                  <th>%</th>
+                  <th>Jml</th>
+                  <th>%</th>
+                </tr>
+              </thead>
               <tbody>
-                                 <tr class="info">
-                <td width="20%">BANJARWANGI</td>
-                <td width="20%" align="right">456 / 1814 RT</td>
-                <td width="60%"><div class="progress">
-                              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="10000" style="width: 25.1378169790518%">
-                              </div><p class="pull-right persen">25.14%</p>
+                                          <tr>
+                <td align="left" nowrap>JAWA BARAT</td>
+                <td align="right">89</td>
+                <td align="right">828</td>
+                <td align="right">853.029</td>
+                <td align="right">8.530</td>
+                <td align="right">861.559</td>
 
-                            </div></td>
+                <td align="right">89</td>
+                <td align="right">100,00%</td>
+                <td align="right">685</td>
+                <td align="right">82,73%</td>
+                <td align="right">64.212</td>
+                <td align="right">7,53%</td>
 
-
+                <td align="right">28</td>
+                <td align="right">0,33%</td>
+                <td align="right">64.240</td>
+                <td align="right">7,46%</td>
               </tr>
-            </tbody>
-                                           <tr class="info">
-                <td width="20%">BOJONG</td>
-                <td width="20%" align="right">764 / 2468 RT</td>
-                <td width="60%"><div class="progress">
-                              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="10000" style="width: 30.9562398703403%">
-                              </div><p class="pull-right persen">30.96%</p>
+                                        <tr>
+                <td align="left" nowrap>JAWA TENGAH</td>
+                <td align="right">41</td>
+                <td align="right">581</td>
+                <td align="right">728.526</td>
+                <td align="right">7.285</td>
+                <td align="right">735.811</td>
 
-                            </div></td>
+                <td align="right">41</td>
+                <td align="right">100,00%</td>
+                <td align="right">517</td>
+                <td align="right">88,98%</td>
+                <td align="right">47.647</td>
+                <td align="right">6,54%</td>
 
-
+                <td align="right">155</td>
+                <td align="right">2,13%</td>
+                <td align="right">47.802</td>
+                <td align="right">6,50%</td>
               </tr>
-            </tbody>
-                                           <tr class="info">
-                <td width="20%">DANGIANG</td>
-                <td width="20%" align="right">313 / 1519 RT</td>
-                <td width="60%"><div class="progress">
-                              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="10000" style="width: 20.6056616194865%">
-                              </div><p class="pull-right persen">20.61%</p>
+                                        <tr>
+                <td align="left" nowrap>JAWA TIMUR</td>
+                <td align="right">83</td>
+                <td align="right">1.064</td>
+                <td align="right">955.593</td>
+                <td align="right">9.555</td>
+                <td align="right">965.148</td>
 
-                            </div></td>
+                <td align="right">83</td>
+                <td align="right">100,00%</td>
+                <td align="right">966</td>
+                <td align="right">90,79%</td>
+                <td align="right">87.421</td>
+                <td align="right">9,15%</td>
 
-
+                <td align="right">3</td>
+                <td align="right">0,03%</td>
+                <td align="right">87.424</td>
+                <td align="right">9,06%</td>
               </tr>
-            </tbody>
-                                           <tr class="info">
-                <td width="20%">JAYABAKTI</td>
-                <td width="20%" align="right">328 / 1626 RT</td>
-                <td width="60%"><div class="progress">
-                              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="10000" style="width: 20.1722017220172%">
-                              </div><p class="pull-right persen">20.17%</p>
+                                                       <tfoot>
 
-                            </div></td>
+  									<th class="kanan">Total :</th>
+  									<th class="kanan">213</th>
+                    <th class="kanan">2.473</th>
+                    <th class="kanan">2.537.148</th>
+                    <th class="kanan">25.370</th>
+                    <th class="kanan">2.562.518</th>
 
-
-              </tr>
-            </tbody>
-                                           <tr class="info">
-                <td width="20%">KADONGDONG</td>
-                <td width="20%" align="right">636 / 2414 RT</td>
-                <td width="60%"><div class="progress">
-                              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="10000" style="width: 26.3463131731565%">
-                              </div><p class="pull-right persen">26.35%</p>
-
-                            </div></td>
-
-
-              </tr>
-            </tbody>
-                                           <tr class="info">
-                <td width="20%">MULYAJAYA</td>
-                <td width="20%" align="right">430 / 1724 RT</td>
-                <td width="60%"><div class="progress">
-                              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="10000" style="width: 24.9419953596287%">
-                              </div><p class="pull-right persen">24.94%</p>
-
-                            </div></td>
-
-
-              </tr>
-            </tbody>
-                                           <tr class="info">
-                <td width="20%">PADAHURIP</td>
-                <td width="20%" align="right">528 / 3263 RT</td>
-                <td width="60%"><div class="progress">
-                              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="10000" style="width: 16.1814281336193%">
-                              </div><p class="pull-right persen">16.18%</p>
-
-                            </div></td>
-
-
-              </tr>
-            </tbody>
-                                           <tr class="info">
-                <td width="20%">TALAGAJAYA</td>
-                <td width="20%" align="right">219 / 1533 RT</td>
-                <td width="60%"><div class="progress">
-                              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="10000" style="width: 14.2857142857142%">
-                              </div><p class="pull-right persen">14.29%</p>
-
-                            </div></td>
-
-
-              </tr>
-            </tbody>
-                                           <tr class="info">
-                <td width="20%">TALAGASARI</td>
-                <td width="20%" align="right">279 / 3174 RT</td>
-                <td width="60%"><div class="progress">
-                              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="10000" style="width: 8.7901701323251%">
-                              </div><p class="pull-right persen">8.79%</p>
-
-                            </div></td>
-
-
-              </tr>
-            </tbody>
-                                           <tr class="info">
-                <td width="20%">TANJUNGJAYA</td>
-                <td width="20%" align="right">344 / 2921 RT</td>
-                <td width="60%"><div class="progress">
-                              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="10000" style="width: 11.7767887709688%">
-                              </div><p class="pull-right persen">11.78%</p>
-
-                            </div></td>
-
-
-              </tr>
-            </tbody>
-                                           <tr class="info">
-                <td width="20%">WANGUNJAYA</td>
-                <td width="20%" align="right">1169 / 2699 RT</td>
-                <td width="60%"><div class="progress">
-                              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="10000" style="width: 43.312337902927%">
-                              </div><p class="pull-right persen">43.31%</p>
-
-                            </div></td>
-
-
-              </tr>
-            </tbody>
-                          
-          </table>
+  									 <th class="kanan">213</th>
+  									 <th class="kanan">100,00%</th>
+                    <th class="kanan">2.168</th>
+  									 <th class="kanan">87,67%</th>
+                    <th class="kanan">199.280</th>
+  									 <th class="kanan">7,85%</th>
+                    <th class="kanan">186</th>
+  									 <th class="kanan">0,73%</th>
+                    <th class="kanan">199.466</th>
+  									 <th class="kanan">7,78%</th>
+  							 </tfoot>
+            </table>
           </div>
-          </div>
+
+          <!-- </div> -->
         </div>
-        <div class="col-md-2 text-center">
-		 <div class="diagram-progres"> <!-- ditambah box -->
-		 
-        <h4>Persentase<br/>Progres Verivali<br/>s.d 14 August 2017</h4>
-        <input type="text" class="knob" value="21.73" data-skin="tron" data-max="1000" data-thickness="0.1" data-width="100" data-height="100" data-fgColor="#00a65a">
-        </div></div>
       </div>
+      </div>
+    </div>
+
+        <div class="row">
+
+                        <div class="col-sm-6">
+                          <h3>Jawa Barat <p class="pull-right"> 27,53%</p></h3>
+                            <div class="progress">
+							<!--style progress bar diganti -->
+                              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="1000" style="width: 27.53%">
+                                27,53%
+                              </div>
+                            </div>
+                            <h3>Jawa Tengah <p class="pull-right"> 6,54%</p></h3>
+                            <div class="progress">
+                              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 6,54%">
+                                6,54%
+                              </div>
+                            </div>
+                            <h3>Jawa Timur <p class="pull-right"> 9,15%</p></h3>
+                            <div class="progress">
+                              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 9,15%">
+                                9,15%
+                              </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
         </section><!-- /.content -->
     </div><!-- /.content-wrapper -->
 
@@ -674,90 +608,7 @@ desired effect
 <script src="plugins/sweetalert/dist/sweetalert.min.js" type="text/javascript"></script>
 
 
-<script>
-var harianchart  = [{"TGL":"2017-07-31","JML":0},{"TGL":"2017-08-01","JML":0},{"TGL":"2017-08-02","JML":0},{"TGL":"2017-08-03","JML":0},{"TGL":"2017-08-04","JML":0},{"TGL":"2017-08-05","JML":0},{"TGL":"2017-08-06","JML":0},{"TGL":"2017-08-07","JML":2},{"TGL":"2017-08-08","JML":73},{"TGL":"2017-08-09","JML":1456},{"TGL":"2017-08-10","JML":1198},{"TGL":"2017-08-11","JML":868},{"TGL":"2017-08-12","JML":482},{"TGL":"2017-08-13","JML":824},{"TGL":"2017-08-14","JML":563}];
-    var labels = [],data=[];
-    for (var i = 0; i < harianchart.length; i++) {
-        labels.push(harianchart[i].TGL);
-        data.push(harianchart[i].JML);
-    }
 
-      var areaChartData = {
-      labels: labels,
-      datasets: [
-        {
-          label: "Electronics",
-          fillColor: "red",
-          strokeColor: "red",
-          pointColor: "red",
-          pointStrokeColor: "#c1c7d1",
-          pointHighlightFill: "#fff",
-          pointHighlightStroke: "rgba(220,220,220,1)",
-          data: data,
-          steppedLine: true
-        }
-      ],
-    };
-    var areaChartOptions = {
-      legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].lineColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>",
-
-
-      //Boolean - whether to make the chart responsive to window resizing
-      responsive: true
-    };
-        // Get the context of the canvas element we want to select
-        areaChartOptions.datasetFill = false;
-        var countries= document.getElementById("myChart").getContext("2d");
-        new Chart(countries).Line(areaChartData,areaChartOptions);
-    </script>
-<script>
-     $(".knob").knob({
-      /*change : function (value) {
-       //console.log("change : " + value);
-       },
-       release : function (value) {
-       console.log("release : " + value);
-       },
-       cancel : function () {
-       console.log("cancel : " + this.value);
-       },*/
-      draw: function () {
-        // "tron" case
-        if (this.$.data('skin') == 'tron') {
-          var a = this.angle(this.cv)  // Angle
-              , sa = this.startAngle          // Previous start angle
-              , sat = this.startAngle         // Start angle
-              , ea                            // Previous end angle
-              , eat = sat + a                 // End angle
-              , r = true;
-          this.g.lineWidth = this.lineWidth;
-          this.o.cursor
-          && (sat = eat - 0.3)
-          && (eat = eat + 0.3);
-          if (this.o.displayPrevious) {
-            ea = this.startAngle + this.angle(this.value);
-            this.o.cursor
-            && (sa = ea - 0.3)
-            && (ea = ea + 0.3);
-            this.g.beginPath();
-            this.g.strokeStyle = this.previousColor;
-            this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false);
-            this.g.stroke();
-          }
-          this.g.beginPath();
-          this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
-          this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false);
-          this.g.stroke();
-          this.g.lineWidth = 2;
-          this.g.beginPath();
-          this.g.strokeStyle = this.o.fgColor;
-          this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
-          this.g.stroke();
-          return false;
-        }
-      }
-    });
-</script>
 
 
 
